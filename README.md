@@ -1,2 +1,2 @@
 # CWD
-A repository for my Critical Web Design class.
+This is Rachel's Github account aaaaaaaaaaaaaaaaah!!!!!
