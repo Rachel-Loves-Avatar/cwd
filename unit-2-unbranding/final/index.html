@@ -3,13 +3,231 @@
 <head>
 
 	<!--
-	About this page:
+	About this page: Nintendo has been on a big power trip recently with their games, specifically copyrighing basic concepts that appear in their games. For this project, I decided to make fun of them. I made it so the basic ideas appear when you hover your mouse over the characters. I also made it so some of the softer messages turn into more threatening ones. 
 
 	-->
 	<title>Unbranding</title>
+
+	<style>
+		
+		#greedtendo {
+			width: 250px;
+			height: 200px;
+			background-image: url(../assets/images/nintendo.png);
+		}
+
+		#greedtendo:hover {
+			background-image: url(../assets/images/Greedtendo.png);
+		}
+
+		.p {
+			font-weight: bold;
+			font-family: Helvetica;
+			text-align: right;
+			word-spacing: 30px;
+			font-size: 20px;
+		}
+
+
+		#red {
+			height: 160px;
+			background-color: red;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			font-family: Helvetica;
+			font-size: 80px;
+		}
+
+		#mario {
+			width: 100px;
+			height: 231px;
+			margin-left: 120px;
+			display: inline-block;
+			background-image: url(../assets/images/mario.png);
+		}
+
+		#mario:hover {
+			width: 180px;
+			height: 225px;
+			background-image: url(../assets/images/HeroicPlumber.jpg);
+		}
+
+		#zelda {
+			width: 230px;
+			height: 257px;
+			margin-left: 160px;
+			display: inline-block;
+			background-image: url(../assets/images/link.png);
+		}
+
+		#zelda:hover {
+			height: 248px;
+			background-image: url(../assets/images/BoyWithSword.jpg);
+		}
+
+		#splatoon {
+			width: 230px;
+			height: 264px;
+			margin-left: 160px;
+			display: inline-block;
+			background-image: url(../assets/images/inkling.png);
+		}
+
+		#splatoon:hover {
+			height: 288px;
+			background-image: url(../assets/images/SeaCreature.png);
+		}
+
+		#kirby {
+			width: 200px;
+			height: 232px;
+			display: inline-block;
+			margin-left: 160px;
+			background-image: url(../assets/images/kirby.png);
+		}
+
+		#kirby:hover {
+			height: 200px;
+			background-image: url(../assets/images/PinkCircle.jpg);
+		}
+
+		#starfox {
+			width: 230px;
+			height: 288px;
+			display: inline-block;
+			margin-left: 80px;
+			background-image: url(../assets/images/starfox.png);
+		}
+
+		#starfox:hover {
+			height: 280px;
+			background-image: url(../assets/images/FoxInSpace.png);
+		}
+
+		#animal {
+			width: 150px;
+			height: 274px;
+			display: inline-block;
+			margin-left: 140px;
+			background-image: url(../assets/images/isabelle.png);
+		}
+
+		#animal:hover {
+			width: 200px;
+			height: 250px;
+			background-image: url(../assets/images/AnimalTown.jpg);
+		}
+
+		#donkey {
+			width: 300px;
+			height: 295px;
+			display: inline-block;
+			margin-left: 140px;
+			background-image: url(../assets/images/donkeykong.png);
+		}
+
+		#donkey:hover {
+			width: 200px;
+			height: 250px;
+			background-image: url(../assets/images/Monke.png);
+		}
+
+		#pika {
+			width: 250px;
+			height: 250px;
+			display: inline-block;
+			margin-left: 140px;
+			background-image: url(../assets/images/pikachu.png);
+		}
+
+		#pika:hover {
+			background-image: url(../assets/images/CreaturesFighting.jpg);
+		}
+
+		h2 {
+			font-family: Helvetica;
+			font-weight: bold;
+			font-size: 50px;
+			text-align: center;
+		}
+		
+
+	</style>
 	
 </head>
 <body>
-	<h1>Hello, world!</h1>
+
+	<div id="greedtendo">
+	</div>
+
+	<p class="p">Explore Shop Support</p>
+
+	<div id="red">
+		<div id="txt">
+			<h1>Check out our games!</h1>
+		</div>
+	</div>
+
+	<p><span style="font-family: Helvetica;font-size: 40px;"><b>Characters:</span></p>
+
+	<div id="mario">
+	</div>
+
+	<div id="zelda">
+	</div>
+
+	<div id="splatoon">
+	</div>
+
+	<div id="kirby">
+	</div>
+
+	<div id="starfox">
+	</div>
+
+	<div id="animal">
+	</div>
+
+	<div id="donkey">
+	</div>
+
+	<div id="pika">
+	</div>
+
+
+
+	<h2>Discover new worlds and make new friends in Nintendo games!</h2>
+
+		
+
+
+	<script type="text/javascript">
+		
+		let targetElement = document.querySelector("h1");
+
+		targetElement.addEventListener("mouseover", function(){
+			this.innerText = "Check out our copyrighted properties!";
+		});
+
+		targetElement.addEventListener("mouseout", function(){
+			this.innerText = "Check out our games!";
+		});
+
+
+		let targetElement2 = document.querySelector("h2")
+
+		targetElement2.addEventListener("mouseover", function(){
+			this.innerText = "Remember, using, talking about, or even thinking about our properties violates copyright laws and is punishable by death!";
+		});
+
+		targetElement2.addEventListener("mouseout", function(){
+			this.innerText = "Discover new worlds and make new friends in Nintendo games!";
+		});
+		
+
+	</script>
 </body>
 </html>
